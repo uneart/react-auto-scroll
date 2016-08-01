@@ -16,7 +16,8 @@ $ npm i react-auto-scroll
 var React = require('react')
 var AutoScroll = require('react-auto-scroll')
 var Component = AutoScroll({
-  property: 'propertyName'
+  property: 'propertyName',
+  alwaysScroll: false
 })(React.createClass(/* ... */))
 ```
 
@@ -25,6 +26,8 @@ var Component = AutoScroll({
 * `AutoScroll(options)(Component)`
 
 * `options.property` (string) Property to track for scrolling
+
+* `options.alwaysScroll` (boolean) Always enable scrolling even if user has scrolled up. Set to `false` by default.
 
 ## License
 
